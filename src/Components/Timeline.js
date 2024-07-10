@@ -20,7 +20,7 @@ const Timeline = () => {
             "degree": "Intermediate",
             "percentage": "99%",
             "direction": "right",
-            "image": inter
+            "image": school
         },
         {
             "name": "The Central Public School, Guntur",
@@ -28,13 +28,16 @@ const Timeline = () => {
             "degree": "SSC",
             "percentage": "10 GPA",
             "direction": "left",
-            "image": school
+            "image": inter
         }
     ];
 
     return (
         <div>
             <div className='hidden md:flex flex-col w-full gap-y-3 my-4'>
+                <div className='flex justify-center items-center'>
+                    <h1 className="text-3xl text-gray-100 font-bold mb-2"><span style={{ textDecoration: "none",borderBottom: "3px solid aqua",borderRadius: "2px" }}>EDUCATION</span></h1>
+                </div>
                 <Circle />
                 {data.map((event, index) => (
                     <Fragment key={index}>
@@ -80,7 +83,7 @@ const Pillar = () => {
 
 const EventCard = ({ name, year, degree, percentage }) => {
     return (
-        <div className='flex flex-col justify-between rounded-xl shadow-md p-4 gap-y-2 bg-white'>
+        <div className='flex flex-col justify-between rounded-xl shadow-md p-4 gap-y-2 bg-[#484747] text-gray-100'>
             <div className='text-xl font-bold'>{name}</div>
             <div className='text-lg'>Year: {year}</div>
             <div className='text-lg'>Degree: {degree}</div>

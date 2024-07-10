@@ -16,7 +16,8 @@ const App = () => {
         <Dashboard />
         <Home />
         <About />
-          
+        <Certificates />
+        <Experience />
       </div>
     </Router>
   );
