@@ -18,6 +18,9 @@ const App = () => {
         <About />
         <Certificates />
         <Experience />
+        <Projects />
+        <Interests />
+        <Contact />
       </div>
     </Router>
   );

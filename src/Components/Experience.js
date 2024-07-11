@@ -3,7 +3,7 @@ import maguva from '../pictures/KeshavSoft.png';
 
 const Experience = () => {
   return (
-    <div className="min-h-screen bg-black text-gray-100 p-8" id="experience" >
+    <div className=" bg-black text-gray-100 p-4 " id="experience" >
       <div className='flex justify-center items-center mb-8'>
         <h1 className="text-3xl font-bold">
           <span style={{ textDecoration: "none", borderBottom: "3px solid aqua", borderRadius: "2px" }}>EXPERIENCE</span>
@@ -11,7 +11,7 @@ const Experience = () => {
       </div>
       <div className='flex items-center justify-center'>
         <div className="bg-[#484747] p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:items-start gap-6 md:w-[80%] ">
-            <img src={maguva} alt="KeshavSoft" className="w-full md:w-1/2 rounded-lg" />
+            <img src={maguva} alt="KeshavSoft" className="lg:w-1/4 h-[150px] w-[300px] lg:h-full rounded-lg" />
             <div className="flex flex-col  items-start  md:text-left">
                 <p className="lg:text-2xl text-xl font-bold mb-2 text-[#00FFFF]">KESHAV SOFT</p>
                 <p className="text-lg mb-2"><b>INTERN</b>: SOFTWARE DEVELOPER</p>

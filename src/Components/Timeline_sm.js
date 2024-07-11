@@ -1,21 +1,21 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Timeline_sm = ({ data }) => {
     return (
-        <div className='md:hidden flex flex-col w-full gap-y-2 my-4'>
+        <div className='lg:hidden flex flex-col w-full gap-y-2 my-4'>
             <div className='flex justify-center items-center'>
                 <h1 className="text-3xl text-gray-100 font-bold mb-2"><span style={{ textDecoration: "none",borderBottom: "3px solid aqua",borderRadius: "2px" }}>EDUCATION</span></h1>
             </div>
             {data.map((event, index) => (
-                <Fragment key={index}>
-                    <div className='flex items-center gap-x-4 mx-auto'>
+                <div key={index} className="items-center">
+                    <div className='flex items-center justify-start gap-x-4 '>
                         <div className='flex flex-col items-center gap-2 justify-start'>
                         <Circle />
                         <Pillar />
                         </div>
                         <EventCard  name={event.name} year={event.year} degree={event.degree} percentage={event.percentage} />
                     </div>
-                </Fragment>
+                </div>
             ))}
         </div>
     );

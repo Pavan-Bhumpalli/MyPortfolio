@@ -19,7 +19,7 @@ const data = [
 
 const Certificates = () => {
   return (
-    <div className=" bg-black text-gray-100 p-8" id="certificates">
+    <div className=" bg-black text-gray-100 p-4 " id="certificates">
       <div className='flex  justify-center items-center mb-8'>
         <h1 className="text-3xl font-bold">
           <span style={{ textDecoration: "none", borderBottom: "3px solid aqua", borderRadius: "2px" }}>CERTIFICATIONS</span>
